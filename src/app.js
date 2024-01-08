@@ -219,7 +219,7 @@ const pushServerChan = (title, desp) => {
     title,
     desp,
   };
-  superagent.post(`https://sctapi.ftqq.com/${serverChan.sendKey}.send`)
+  superagent.post(`http://www.pushplus.plus/send/${serverChan.sendKey}`)
     .type('form')
     .send(data)
     .end((err, res) => {
